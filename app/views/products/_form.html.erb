@@ -1,0 +1,18 @@
+<%= form_with(model: product, remote: true) do |form| %>
+  
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <%= form.error_for :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
